@@ -1,6 +1,6 @@
-# Movie Library
+# Vue Ecommerce Site
 
-Movie search tool.
+Ecommerce site project for Alura Oracle Next Education program
 
 ## Live Preview
 [LINK](https://vueecommerce-site.netlify.app/)
