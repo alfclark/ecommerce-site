@@ -1,24 +1,13 @@
-# ecommerce-site
+# Movie Library
 
-## Project setup
-```
-npm install
-```
+Movie search tool.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Live Preview
+[LINK](https://vueecommerce-site.netlify.app/)
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Technologies:
+- Vue
+- HTML5
+- Javascript
+- CSS3
+- Vue Router
