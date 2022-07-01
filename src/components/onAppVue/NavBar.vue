@@ -17,6 +17,7 @@
 <script>
 export default {
   setup() {
+    /* Burger menu function on click */
     const showMenu = () => {};
     return {
       showMenu,
