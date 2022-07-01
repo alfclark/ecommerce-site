@@ -1,44 +1,97 @@
 <template>
-  <div class="landing">
-    <div class="land-img">
-      <img class="image" src="@/assets/img/extras/pc.jpg" alt="" />
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide-to="0"
+        class="active"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide-to="1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide-to="2"
+      ></button>
     </div>
-    <div class="land-msg">
-      <div class="upper-msg">
-        <img src="@/assets/img/brands/apple.svg" alt="" class="logo" />
-        <div class="msg">
-          <h2>The Apple week is here!</h2>
-          <h4>Save up to a 40% on MacBook Series this week.</h4>
-        </div>
-        <div class="features">
-          <p>Supercharged by</p>
-          <img class="M1" src="@/assets/img/extras/M1Pro.png" alt="" />
-          <p>and</p>
-          <img class="M1" src="@/assets/img/extras/M1ProMax.png" alt="" />
-        </div>
-        <div class="links">
-          <a href="" class="link">Learn more ></a>
-          <a href="" class="link">Buy ></a>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="landing">
+          <div class="land-img">
+            <img class="image" src="@/assets/img/extras/pc.jpg" alt="" />
+          </div>
+          <div class="land-msg">
+            <div class="upper-msg">
+              <img src="@/assets/img/brands/apple.svg" alt="" class="logo" />
+              <div class="msg">
+                <h2>The Apple week is here!</h2>
+                <h4>Save up to a 40% on MacBook Series this week.</h4>
+              </div>
+              <div class="features">
+                <p>Supercharged by</p>
+                <img class="M1" src="@/assets/img/extras/M1Pro.png" alt="" />
+                <p>and</p>
+                <img class="M1" src="@/assets/img/extras/M1ProMax.png" alt="" />
+              </div>
+              <div class="links">
+                <a href="" class="link">Learn more ></a>
+                <a href="" class="link">Buy ></a>
+              </div>
+            </div>
+            <hr class="divider" />
+            <div class="lower-msg">
+              <h3>
+                Get <span class="supercharged">supercharged</span> for college.
+              </h3>
+              <h5>Save on Mac or iPad. Get in instant gift card up to $150.</h5>
+              <div class="buy-options">
+                <div class="mac">
+                  <h6>Buy Mac.</h6>
+                  <a href="">Compare models.</a>
+                </div>
+                <div class="ipad">
+                  <h6>Buy iPad.</h6>
+                  <a href="">Compare models.</a>
+                </div>
+              </div>
+              <p>Or</p>
+              <a href="">Explore Apple college accesories</a>
+            </div>
+          </div>
         </div>
       </div>
-      <hr class="divider" />
-      <div class="lower-msg">
-        <h3>Get <span class="supercharged">supercharged</span> for college.</h3>
-        <h5>Save on Mac or iPad. Get in instant gift card up to $150.</h5>
-        <div class="buy-options">
-          <div class="mac">
-            <h6>Buy Mac.</h6>
-            <a href="">Compare models.</a>
-          </div>
-          <div class="ipad">
-            <h6>Buy iPad.</h6>
-            <a href="">Compare models.</a>
-          </div>
-        </div>
-        <p>Or</p>
-        <a href="">Explore Apple college accesories</a>
+      <div class="carousel-item">
+        <img src="chicago.jpg" alt="Chicago" class="d-block w-100" />
+      </div>
+      <div class="carousel-item">
+        <img src="ny.jpg" alt="New York" class="d-block w-100" />
       </div>
     </div>
+
+    <!-- Left and right controls/icons -->
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#demo"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#demo"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon"></span>
+    </button>
   </div>
 </template>
 
