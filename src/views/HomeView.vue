@@ -1,9 +1,15 @@
 <template>
-  <div class="home"></div>
+  <LandingScreen />
 </template>
 
 <script>
-// @ is an alias to /src
+import LandingScreen from "@/components/onHome/LandingScreen.vue";
 
-export default {};
+export default {
+  components: {
+    LandingScreen,
+  },
+};
 </script>
+
+<style scoped></style>
