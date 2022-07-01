@@ -25,16 +25,16 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .navbar {
   padding: 0;
   display: flex;
-  width: 100vw;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem 0;
-  padding: 0 3rem;
+  padding: 0.4rem 2rem;
   top: 0;
+  position: sticky;
+  background-color: white;
 }
 
 .burger-menu {
