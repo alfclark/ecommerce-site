@@ -25,7 +25,11 @@
       <div class="carousel-item active">
         <div class="landing">
           <div class="land-img">
-            <img class="image" src="@/assets/img/extras/pc.jpg" alt="" />
+            <img
+              class="image"
+              src="https://www.apple.com/v/ipad-pro/ai/images/overview/thunderbolt/thunderbolt_hero__fg7vx8fb8ve6_large_2x.jpg"
+              alt=""
+            />
           </div>
           <div class="land-msg">
             <div class="upper-msg">
@@ -45,8 +49,14 @@
                 <a href="" class="link">Buy ></a>
               </div>
             </div>
-            <hr class="divider" />
-            <div class="lower-msg">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="landing">
+          <div class="land-msg">
+            <img src="@/assets/img/brands/apple.svg" alt="" class="logo" />
+            <div class="upper-msg">
               <h3>
                 Get <span class="supercharged">supercharged</span> for college.
               </h3>
@@ -65,13 +75,52 @@
               <a href="">Explore Apple college accesories</a>
             </div>
           </div>
+          <div class="land-img">
+            <video
+              src="https://www.apple.com/105/media/us/ipad-air/2022/5abf2ff6-ee5b-4a99-849c-a127722124cc/anim/features/large_2x.mp4"
+              autoplay
+              loop
+            ></video>
+          </div>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="chicago.jpg" alt="Chicago" class="d-block w-100" />
-      </div>
-      <div class="carousel-item">
-        <img src="ny.jpg" alt="New York" class="d-block w-100" />
+        <div class="landing">
+          <div class="land-img">
+            <img
+              src="@/assets/img/extras/assistants.png"
+              alt=""
+              class="image"
+            />
+          </div>
+          <div class="land-msg">
+            <div class="brand">
+              <img src="@/assets/img/brands/google.svg" alt="" class="logo" />
+              <h3>vs</h3>
+              <img src="@/assets/img/brands/amazon.svg" alt="" class="logo" />
+            </div>
+
+            <div class="upper-msg">
+              <h3>
+                The war of the <span class="assistants">assistants</span> is
+                here.
+              </h3>
+              <h5>Buy one and get the other for half the price.</h5>
+              <div class="buy-options">
+                <div class="mac">
+                  <h6>Buy Google Devices</h6>
+                  <a href="">Compare models.</a>
+                </div>
+                <div class="ipad">
+                  <h6>Buy Alexa Devices</h6>
+                  <a href="">Compare models.</a>
+                </div>
+              </div>
+              <p>Or</p>
+              <a href="">Explore smart accesories.</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -107,16 +156,18 @@ export default {};
   background-color: var(--black);
   border-radius: 2rem;
   margin: 1rem;
+  height: 400px;
+  padding: 1rem 3rem;
 }
 .land-msg {
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
-  gap: 1rem;
-  padding: 1rem;
+  gap: 0.5rem;
+  padding: 2rem;
 }
 .upper-msg {
   display: flex;
@@ -157,23 +208,14 @@ a:hover {
   text-decoration: underline;
 }
 
-.divider {
-  border: solid white 1px;
-  width: 80%;
-}
-.lower-msg {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
-.lower-msg > h3 {
+.upper-msg > h3 {
   font-style: italic;
 }
 .supercharged {
   color: var(--pink);
+}
+.assistants {
+  color: var(--blue);
 }
 
 .buy-options {
@@ -181,27 +223,46 @@ a:hover {
   gap: 5rem;
   margin-top: 1rem;
 }
+.brand {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  justify-content: center;
+}
 .logo {
   width: 50px;
   margin: 1rem;
 }
 .land-img {
   width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
 }
 .image {
-  width: 90%;
-  border-bottom-left-radius: 2rem;
-  border-top-left-radius: 2rem;
+  height: auto;
+  max-height: 100%;
+  padding: 2rem;
 }
-
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  max-height: 100%;
+}
 @media screen and (max-width: 900px) {
   .landing {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    margin: 1;
+    height: 500px;
   }
-  .image {
+  .land-msg {
+    padding: 2rem;
+  }
+  .image,
+  video {
     display: none;
   }
 }
