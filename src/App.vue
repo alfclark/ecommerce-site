@@ -24,6 +24,7 @@ export default {
   --black: #010101;
   --blue: #2997ff;
   --pink: #ca2166;
+  --green: green;
 }
 * {
   margin: 0;
