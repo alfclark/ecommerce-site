@@ -36,6 +36,7 @@ export default {
   top: 0;
   position: sticky;
   background-color: white;
+  z-index: 2;
 }
 
 .burger-menu {
