@@ -69,7 +69,9 @@
                             </li>
                           </ul>
                         </div>
-                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-primary"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
                       </div>
                     </div>
                   </div>
@@ -106,7 +108,9 @@
                             </li>
                           </ul>
                         </div>
-                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-primary"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
                       </div>
                     </div>
                   </div>
@@ -143,7 +147,9 @@
                             </li>
                           </ul>
                         </div>
-                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-primary"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
                       </div>
                     </div>
                   </div>
@@ -180,7 +186,9 @@
                             </li>
                           </ul>
                         </div>
-                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-primary"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
                       </div>
                     </div>
                   </div>
@@ -221,7 +229,9 @@
                             </li>
                           </ul>
                         </div>
-                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-primary"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
                       </div>
                     </div>
                   </div>
@@ -258,7 +268,9 @@
                             </li>
                           </ul>
                         </div>
-                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-primary"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
                       </div>
                     </div>
                   </div>
@@ -295,7 +307,9 @@
                             </li>
                           </ul>
                         </div>
-                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-primary"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
                       </div>
                     </div>
                   </div>
@@ -332,7 +346,9 @@
                             </li>
                           </ul>
                         </div>
-                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-primary"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
                       </div>
                     </div>
                   </div>
@@ -373,7 +389,9 @@
                             </li>
                           </ul>
                         </div>
-                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-primary"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
                       </div>
                     </div>
                   </div>
@@ -410,7 +428,9 @@
                             </li>
                           </ul>
                         </div>
-                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-primary"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
                       </div>
                     </div>
                   </div>
@@ -447,7 +467,9 @@
                             </li>
                           </ul>
                         </div>
-                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-primary"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
                       </div>
                     </div>
                   </div>
@@ -484,7 +506,9 @@
                             </li>
                           </ul>
                         </div>
-                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-primary"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
                       </div>
                     </div>
                   </div>
@@ -722,7 +746,7 @@ h2::after {
   font-weight: bold;
   background: none;
   border: 1px solid #ccc;
-  padding: 5px 10px;
+  padding: 0.5rem 1rem;
   margin-top: 5px;
   line-height: 16px;
 }
