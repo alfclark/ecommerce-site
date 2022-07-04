@@ -21,10 +21,12 @@ export default {
 :root {
   --carbon: #414042;
   --carbonLight: #5c5c5c;
+  --grey: #eaeded87;
   --black: #010101;
   --blue: #2997ff;
   --pink: #ca2166;
   --green: green;
+  --yellow: #fed761;
 }
 * {
   margin: 0;
