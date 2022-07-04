@@ -1,6 +1,8 @@
 <template>
-  <LandingScreen />
-  <ProductsOverview />
+  <div class="HomeView">
+    <LandingScreen />
+    <ProductsOverview />
+  </div>
 </template>
 
 <script>
@@ -15,4 +17,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.HomeView {
+  background-color: var(--grey);
+}
+</style>
