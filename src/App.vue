@@ -20,7 +20,7 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
 :root {
   --carbon: #414042;
-  --carbonLight: #5c5c5c;
+  --carbonLight: #8e8e8e;
   --grey: #eaeded87;
   --black: #010101;
   --blue: #2997ff;
