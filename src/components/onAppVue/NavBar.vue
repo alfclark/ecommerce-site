@@ -6,7 +6,18 @@
   </div>
   <nav class="navbar">
     <div class="burger-menu">
-      <i onclick="showMenu()" class="fa-solid fa-bars"></i>
+      <div class="dropdown">
+        <button
+          class="btn dropdown-toggle cart"
+          type="button"
+          id="dropdownMenuButton1"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1"></div>
+      </div>
     </div>
     <div class="brand">
       <router-link to="/">
@@ -36,15 +47,7 @@
 </template>
 
 <script>
-export default {
-  setup() {
-    /* Burger menu function on click */
-    const showMenu = () => {};
-    return {
-      showMenu,
-    };
-  },
-};
+export default {};
 </script>
 
 <style scoped>
@@ -56,19 +59,23 @@ export default {
   justify-content: right;
   background-color: var(--grey);
   width: 100%;
-  padding: 0 2rem 0 0;
+  padding: 0.2rem 2rem 0.2rem 0;
   gap: 0.5rem;
 }
 .userLinks .link {
   color: var(--carbon);
   text-decoration: none;
+  transition: 0.2s;
+}
+.userLinks .link:hover {
+  color: var(--carbonLight);
 }
 .navbar {
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.4rem 2rem;
+  padding: 0.5rem 2rem;
   top: 0;
   position: sticky;
   background-color: white;
