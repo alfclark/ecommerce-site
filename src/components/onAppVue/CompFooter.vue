@@ -57,7 +57,12 @@
     </div>
     <hr class="divider" />
     <div class="footer-bottom">
-      <p class="credits">© 2022 GeekCave - All rights reserved.</p>
+      <p class="credits">
+        © 2022 GeekCave - All rights reserved. | Made by
+        <a target="blank" href="https://github.com/alfclark/ecommerce-site"
+          >AlfClark</a
+        >
+      </p>
     </div>
   </footer>
 </template>
