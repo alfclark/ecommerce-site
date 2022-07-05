@@ -19,28 +19,35 @@
           </ul>
         </div>
         <div class="section">
-          <h3 class="subtitle">Resources</h3>
-          <ul class="links">
-            <li><a class="link" href="">Careers</a></li>
-            <li><a class="link" href="">Settings</a></li>
-            <li><a class="link" href="">Privacy</a></li>
-            <li><a class="link" href="">Conditions</a></li>
-          </ul>
-        </div>
-        <div class="section">
-          <h3 class="subtitle">Contact</h3>
-          <div class="contact">
+          <h3 class="subtitle">Contact Us</h3>
+          <div class="contactSection">
             <ul class="links">
-              <li>
-                <a class="link" href="mailto:email@email.com">
+              <li class="contact">
+                <div class="contactItem">
+                  <i class="fa-solid fa-house"></i>
+                  <p>New York</p>
+                </div>
+                <div class="contactItem">
                   <i class="fa-solid fa-envelope"></i>
-                  Email Us
-                </a>
+                  <p>mail@mail.com</p>
+                </div>
+                <div class="contactItem">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>+ 01 234 567 88</p>
+                </div>
               </li>
-              <li>
-                <a class="link" href="">
-                  <i class="fa-solid fa-comment"></i>
-                  Text Us
+              <li class="social">
+                <a class="socialLink" href="">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="socialLink" href="">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a class="socialLink" href="">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a class="socialLink" href="">
+                  <i class="fa-brands fa-linkedin-in"></i>
                 </a>
               </li>
             </ul>
@@ -97,19 +104,17 @@ export default {};
 }
 .sections {
   display: flex;
-  gap: 10rem;
+  gap: 5rem;
 }
 .logo-section {
   display: flex;
   flex-direction: column;
-  width: 25%;
   align-items: center;
   text-align: center;
 }
 .section {
   display: flex;
   flex-direction: column;
-  width: 25%;
 }
 
 .logo {
@@ -120,7 +125,8 @@ export default {};
 }
 
 .description {
-  font-size: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 200;
 }
 
 .subtitle {
@@ -133,11 +139,14 @@ export default {};
   margin: 0;
 }
 
-.link {
+.link,
+.contactItem p {
   text-decoration: none;
   font-size: 0.9rem;
   transition: 0.4s;
   color: white;
+  font-weight: 300;
+  margin: 0;
 }
 
 .fa-solid {
@@ -149,11 +158,32 @@ export default {};
   text-decoration: underline;
   transition: 0.4s;
 }
-
 .contact {
   display: flex;
-  transition: 0.4s;
   flex-direction: column;
+  gap: 0.3rem;
+}
+.contactItem {
+  display: flex;
+  align-items: center;
+}
+.contactItem p {
+  padding-left: 0.5rem;
+}
+.social {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.socialLink {
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: 0.4s;
+  color: white;
+}
+
+.socialLink:hover {
+  color: var(--grey);
 }
 
 .divider {
@@ -162,6 +192,7 @@ export default {};
 .credits {
   font-size: 0.7rem;
 }
+
 @media screen and (max-width: 900px) {
   .sections {
     gap: 1rem;
@@ -177,12 +208,23 @@ export default {};
     font-size: 1rem;
   }
 
-  .link {
+  .link,
+  .contactItem p {
     font-size: 0.8rem;
   }
 
   .fa-solid {
     font-size: 0.8rem;
+  }
+  .contactItem p {
+    padding-left: 0.3rem;
+    font-size: 0.6rem;
+  }
+  .logo-section {
+    width: 20%;
+  }
+  .sections {
+    justify-content: center;
   }
 }
 </style>
