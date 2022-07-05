@@ -191,6 +191,7 @@ export default {};
 }
 .credits {
   font-size: 0.7rem;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 900px) {
