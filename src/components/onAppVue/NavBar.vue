@@ -305,6 +305,11 @@ export default {};
   margin: 0 3px 0 0;
   color: var(--blue);
 }
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 .product {
   display: flex;
 }
