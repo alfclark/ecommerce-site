@@ -1,9 +1,9 @@
 <template>
-  <div class="userLinks">
+  <section class="userLinks">
     <router-link class="link" to="">Help</router-link>|
-    <router-link class="link" to="">Join Us</router-link>|
+    <router-link class="link" to="/joinus">Join Us</router-link>|
     <router-link class="link" to="/login">Sign In</router-link>
-  </div>
+  </section>
   <nav class="navbar">
     <div class="burger-menu">
       <div class="dropdown">
@@ -143,12 +143,12 @@
               </div>
             </div>
             <div class="go-to-cart">
-              <a class="see" href="">See all ></a>
+              <router-link class="see" to="/checkout">See all ></router-link>
             </div>
           </div>
           <hr />
           <div class="checkoutSection">
-            <router-link class="checkout" to=""
+            <router-link class="checkout" to="/checkout"
               >Continue to Checkout
             </router-link>
           </div>
@@ -168,11 +168,12 @@ export default {};
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: right;
+  justify-content: end;
   background-color: var(--grey);
   width: 100%;
-  padding: 0.2rem 2rem 0.2rem 0;
-  gap: 0.5rem;
+  padding: 0.5rem 2rem;
+  gap: 0.7rem;
+  height: 2rem;
 }
 .userLinks .link {
   color: var(--carbon);
@@ -187,7 +188,7 @@ export default {};
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 2rem;
+  padding: 0.8rem 1.5rem;
   top: 0;
   position: sticky;
   background-color: white;
@@ -238,7 +239,7 @@ export default {};
 }
 
 .logo {
-  width: 100px;
+  width: 80px;
   margin: 0;
   transition: 1s;
 }
