@@ -2,7 +2,7 @@
   <div class="userLinks">
     <router-link class="link" to="">Help</router-link>|
     <router-link class="link" to="">Join Us</router-link>|
-    <router-link class="link" to="">Sign In</router-link>
+    <router-link class="link" to="/login">Sign In</router-link>
   </div>
   <nav class="navbar">
     <div class="burger-menu">
