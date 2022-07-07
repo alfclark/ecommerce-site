@@ -25,8 +25,14 @@
           </div>
           <button class="loginBtn" type="">Login</button>
         </form>
+        <div class="noPassword">
+          <router-link class="forgotPassword" to=""
+            >Forgot Password?</router-link
+          >
+        </div>
         <p class="join">
-          Not a member? <router-link class="toJoin" to="">Join</router-link>
+          Not a member?
+          <router-link class="toJoin" to="/joinus">Join</router-link>
         </p>
       </div>
       <div class="or">
@@ -118,6 +124,13 @@ input:focus {
 .loginBtn:hover {
   background-color: var(--carbonLight);
   border: solid 1px var(--carbonLight);
+}
+.noPassword {
+  text-align: center;
+  margin-bottom: 0.2rem;
+}
+.forgotPassword {
+  font-size: 0.9rem;
 }
 .join {
   color: var(--carbonLight);
