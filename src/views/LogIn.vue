@@ -90,7 +90,7 @@ export default {};
   transition: 0.3s;
 }
 input::placeholder {
-  color: var(--greyDark);
+  color: var(--carbonLight);
   font-size: 0.9rem;
 }
 input:focus {
