@@ -24,6 +24,7 @@ export default {
   --grey: #eaeded87;
   --black: #010101;
   --blue: #2997ff;
+  --blueLight: #e8f0fe;
   --pink: #ca2166;
   --green: green;
   --yellow: #fed761;
