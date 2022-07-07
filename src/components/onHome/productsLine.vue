@@ -790,7 +790,7 @@ h2::after {
 }
 
 .carousel .item-price {
-  font-size: 13px;
+  font-size: 12px;
   margin: 0;
 }
 .carousel .item-price strike {
@@ -946,6 +946,13 @@ h2::after {
   }
   .product-info {
     height: 60%;
+  }
+  .carousel .item-price {
+    font-size: 10px;
+    margin: 0;
+  }
+  .carousel .carousel-item h4[data-v-a99e3fae] {
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 500px) {
