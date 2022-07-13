@@ -12,10 +12,12 @@
         <div class="section">
           <h3 class="subtitle">Service</h3>
           <ul class="links">
-            <li><a class="link" href="">About Us</a></li>
-            <li><a class="link" href="">Contact Us</a></li>
-            <li><a class="link" href="">Features</a></li>
-            <li><a class="link" href="">Support</a></li>
+            <li>
+              <router-link class="link" to="/about-us">About Us</router-link>
+            </li>
+            <li><router-link class="link" to="">Contact Us</router-link></li>
+            <li><router-link class="link" to="">Features</router-link></li>
+            <li><router-link class="link" to="">Support</router-link></li>
           </ul>
         </div>
         <div class="section">
