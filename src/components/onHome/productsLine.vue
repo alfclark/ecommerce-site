@@ -1,5 +1,11 @@
 <template>
-  <div class="product-line">
+  <section class="product-line">
+    <div class="messages">
+      <h3 class="message">
+        <span class="underline">Free</span> shipping in
+        <span class="underline">all</span> products, no matter the price.
+      </h3>
+    </div>
     <div class="discounted">
       <div class="container">
         <div class="row">
@@ -681,7 +687,12 @@
         </div>
       </div>
     </div>
-  </div>
+    <div class="refurbished">
+      <h2 class="title">
+        <span class="highlight"><b>Refurbished</b> </span> deals
+      </h2>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -691,6 +702,27 @@ export default {};
 <style scoped>
 .product-line {
   z-index: 0;
+}
+.messages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.message {
+  font-size: 1.5rem;
+  margin: 0.4rem 0.5rem;
+  padding: 0.3rem 3rem;
+  background-color: var(--blue);
+  color: white;
+  text-align: center;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+  border-radius: 2rem;
+  box-shadow: 0 0 20px var(--blue);
+}
+.underline {
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 h2 {
   color: #000;
@@ -792,10 +824,6 @@ h2::after {
 .carousel .item-price {
   font-size: 12px;
   margin: 0;
-}
-.carousel .item-price strike {
-  color: #999;
-  margin-right: 5px;
 }
 .carousel .item-price span {
   color: #86bd57;
@@ -916,6 +944,9 @@ h2::after {
 .cart {
   text-decoration: none;
   color: var(--blue);
+}
+.refurbished .highlight {
+  color: var(--yellow);
 }
 
 @media screen and (max-width: 1000px) {
