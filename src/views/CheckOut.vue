@@ -12,7 +12,7 @@
               <i class="fa-solid fa-caret-down"></i>
             </h4>
             <Transition name="slide-fade">
-              <div v-show="isShown === false" class="content">
+              <div v-show="!isShown" class="content">
                 <form action="" class="deliveryInfo">
                   <input class="email" type="email" placeholder="Email" />
                   <div class="name">
@@ -41,7 +41,7 @@
                     <h6>FREE</h6>
                   </div>
                   <div class="method">
-                    <input type="radio" name="gender" value="male" checked />
+                    <input type="radio" name="gender" value="male" />
                     <h6>Express</h6>
                     <h6>1-3 days</h6>
                     <h6>$5.99</h6>
@@ -59,9 +59,9 @@
               <div v-show="isShown" class="content">
                 <div class="cardSection">
                   <div class="card">
-                    <h4 class="cardNumber">6451 1456 4561 4563</h4>
-                    <h6 class="cardHolder">CARD HOLDER</h6>
-                    <h6 class="cardDate">01/26</h6>
+                    <h4 class="cardNumber">1234 1234 1234 1234</h4>
+                    <h6 class="cardHolder">holder name</h6>
+                    <h6 class="cardDate">02/29</h6>
                     <img
                       src="https://www.svgrepo.com/show/362011/mastercard.svg"
                       alt=""
@@ -301,6 +301,7 @@ input[type="radio"] {
   font-weight: 300;
   font-size: 1vw;
   color: white;
+  text-transform: uppercase;
 }
 .cardDate {
   position: absolute;
